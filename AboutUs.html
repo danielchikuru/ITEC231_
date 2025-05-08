@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('homepage1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    gap: 10px;
+    padding: 20px;
+}
+
+header, .footer {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.links-top, .links-bottom {
+    display: flex;
+    gap: 20px;
+}
+
+.links-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.links-top button, .links-bottom button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.links-top button:hover, .links-bottom button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.content {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: 80px 1fr 80px;
+        padding: 10px;
+    }
+
+    header, footer {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .links-top, .links-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .links-top button, .links-bottom button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>About Us</header>
+        <main>
+            <div class="links-top">
+                <a href="index.html"><button>Home</button></a>
+            </div>
+            <div class="content">
+                <h2>About Us at EasyEats</h2>
+                <br>
+                At EasyEats, we believe that cooking should be joyful, approachable, and deliciously simple. Founded in 2023 by a group of passionate home cooks, food enthusiasts, and recipe creators, our mission is to make every meal a moment to savor, without the stress. We know life can be busy, and not everyone has hours to spend in the kitchen. That’s why we’ve built a place where anyone, from beginners to seasoned chefs, can find quick, reliable, and tasty recipes that fit their lives.<br>
+                <br>Our story began around a shared kitchen table, where friends swapped stories of their favorite comfort foods, time-saving hacks, and the dishes that brought their families together. We realized that what makes cooking special isn’t complicated techniques or fancy ingredients—it’s the love and care that go into every bite. From that spark, EasyEats was born: a community-driven platform packed with straightforward recipes, practical tips, and a dash of inspiration to make your time in the kitchen feel like a breeze.<br>
+                <br>Whether it’s a 15-minute weeknight dinner, a cozy weekend bake, or a crowd-pleasing dish for your next gathering, we’ve got you covered. Our team scours the globe for flavors that excite, tests every recipe to ensure it’s foolproof, and shares the kind of advice that makes you feel like you’re cooking with a friend. We’re here to help you create meals that are as easy to prepare as they are to enjoy.
+                Join us at EasyEats, and let’s make cooking fun, flavorful, and effortlessly yours. Explore our recipes, share your creations, and become part of a community that celebrates the everyday magic of good food.
+                </div>
+            <div class="links-bottom">
+                <a href="Recipes.html"><button>Recipes</button></a>
+                <a href="Cookingtips.html"><button>Cooking Tips</button></a>
+                <a href="help&support.html"><button>Help & Support</button></a>
+            </div>
+        </main>
+        <div class="footer">
+            Copyright &copy; 2025 Easy Eats<br>
+            <a href="mailto:DanielChikuru.com">DanielChikuru.com
+        </div>
+    </div>
+</body>
+</html>
